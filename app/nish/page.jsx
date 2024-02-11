@@ -1,43 +1,80 @@
-import React from 'react'
+import React from "react";
 import {
-    Carousel,
-    CarouselContent,
-    CarouselItem,
-    CarouselNext,
-    CarouselPrevious,
-  } from "@/components/ui/carousel"
-  
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import Image from "next/image";
+
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 
 const Shop = () => {
   return (
-    <div className='w-full h-full justify-center items-center flex'>
-        
-        <div className="w-32 h-10 flex absolute right-3 top-1 padding-10 border-accent border rounded-xl">
-            
-            <span className='text-white flex justify-center items-center pl-2'>🍀10</span>
+    <div className="w-full h-full justify-center items-center flex">
+      <div className="w-4/5 h-4/5 bg-util border-white border-2 rounded-xl bg-opacity-20">
+        {/* <div className="w-full h-1/3 "> */}
 
-        </div>
-
-
-        <div className="w-4/5 h-4/5 bg-util border-white border-2 rounded-xl bg-opacity-20">
-            
-            
-            <div className="w-full h-1/3 border-b border-white">
-                <div className='h-full w-full '>
-                    <Carousel className="justify-center items-center">
-                        <CarouselContent className="">
-                            <CarouselItem className="md:basis-1/2 lg:basis-1/2 w-full h-full border border-white ">Hello</CarouselItem>
-                            <CarouselItem className="md:basis-1/2 lg:basis-1/2 w-full h-full">My Name is</CarouselItem>
-                            <CarouselItem className="md:basis-1/2 lg:basis-1/2 w-full h-full">Slim Shady</CarouselItem>
+        {/* <div className=''>
+                    <Carousel className="">
+                        <CarouselContent>
+                            <CarouselItem className="h-64">
+                            
+                                <Image fill={true} src="/imgs/dummy.jpg" alt="placeholder" className='rounded-xl' />
+                            
+                            </CarouselItem>
+                            <CarouselItem className="">
+                            
+                                <Image fill={true} src="/imgs/dummy2.png" alt="placeholder" className='rounded-xl' />
+                            
+                            </CarouselItem>
+                            <CarouselItem className="">
+                                
+                                <Image fill={true} src="/imgs/dummy3.png" alt="placeholder" className='rounded-xl' />
+                            
+                            </CarouselItem>
                         </CarouselContent>
                         <CarouselPrevious />
                         <CarouselNext />
                     </Carousel>
-                    </div>
-            </div>
-        </div>
-    </div>
-  )
-}
+                </div>
+            </div> */}
 
-export default Shop
+        <div className="w-full h-2/3 flex-row justify-center items-center border-0">
+          <div className="bg-util bg-opacity-20 rounded-xl flex h-24 w-full flex-row space-x-2 space-y-2">
+            <div>
+              <Image
+                src={"/imgs/dummy2.png"}
+                width={88}
+                height={88}
+                className="pl-2 pt-4"
+              ></Image>
+            </div>
+
+            <div className="w-full">
+              <h1 className="text-white text-l font-bold ">Plant A Tree</h1>
+              <p className="text-white text-[12px] text-wrap">
+                Use your points to plant a tree and help reduce carbon
+                emmisions!
+              </p>
+            </div>
+
+            <div className="w-full">
+              <span className="text-white text-sm flex">🍀10</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Shop;
