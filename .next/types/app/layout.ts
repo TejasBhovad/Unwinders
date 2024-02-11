@@ -1,4 +1,4 @@
-// File: /Users/tejas/Documents/Code/hackathons/gdsc/app/layout.jsx
+// File: /Users/tejas/Documents/Code/hackathons/hack/Unwinders/Unwinders/app/layout.jsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

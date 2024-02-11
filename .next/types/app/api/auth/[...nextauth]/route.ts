@@ -1,4 +1,4 @@
-// File: /Users/tejas/Documents/Code/hackathons/gdsc/app/api/auth/[...nextauth]/route.js
+// File: /Users/tejas/Documents/Code/hackathons/hack/Unwinders/Unwinders/app/api/auth/[...nextauth]/route.js
 import * as entry from '../../../../../../app/api/auth/[...nextauth]/route.js'
 import type { NextRequest } from 'next/server.js'
 
